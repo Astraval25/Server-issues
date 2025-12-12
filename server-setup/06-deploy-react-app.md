@@ -84,7 +84,7 @@ sudo systemctl reload apache2
 ## 6. Set Permissions (Production Secure)
 ```bash
 sudo chown -R www-data:www-data /var/www/domains/designer.astraval.com/
-sudo chmod -R 755 /var/www/domains/designre.astraval.com/
+sudo chmod -R 755 /var/www/domains/designer.astraval.com/
 sudo find /var/www/domains/designer.astraval.com/public/ -type f -exec chmod 644 {} \;
 ```
 
