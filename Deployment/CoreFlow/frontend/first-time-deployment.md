@@ -19,7 +19,7 @@ sudo chmod -R 755 /var/www/domains/coreflow.astraval.com/
 ## 2. Clone and Build React App
 ```bash
 cd /var/www/domains/coreflow.astraval.com/
-git clone https://github.com/Astraval25/CoreFlowFrontend
+git clone https://github.com/Astraval25/CoreFlowFrontend source
 cd source
 
 # Install dependencies and build
