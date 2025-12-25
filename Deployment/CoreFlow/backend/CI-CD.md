@@ -4,8 +4,8 @@
 ## 1. Clone and Prepare Source
 
 ```bash
-cd /var/www/domains/coreflow.astraval.com/CoreFlowBackend
-rm -rf source
+cd /var/www/domains/coreflow.astraval.com
+sudo rm -rf source
 
 # Clone the repository into 'source' folder
 sudo git clone https://github.com/Astraval25/CoreFlowBackend.git source
@@ -40,6 +40,17 @@ sudo chown astraval:astraval /var/www/coreflow/coreflow.jar
 sudo systemctl restart coreflow
 sudo systemctl status coreflow
 sudo journalctl -u coreflow -f
+```
+
+```bash
+sudo mkdir -p /logs
+sudo chown -R astraval:astraval /logs
+sudo chmod 755 /logs
+```
+
+```bash
+tail -f /logs/coreflow.log
+tail -f /var/log/coreflow/coreflow.log
 ```
 
 ---
